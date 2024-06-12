@@ -1,0 +1,15 @@
+<h1>All Applications</h1>
+
+{% for application in object_list %}
+
+	<ul>
+		<li>Name: {{ application.name }}</li>
+		<li>Objective: {{ application.objective }}</li>
+		<li>Education: {{ application.education }}</li>
+		<li>Accomplishments: {{ application.accomplishments }}</li>
+		<li>Work Experence: {{ application.work_experence }}</li>
+		<li>Certifications: {{ application.certifications }}</li>
+		
+	</ul>
+	
+{% endfor %}
